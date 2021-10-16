@@ -1,0 +1,10 @@
+App is working on PORT 5000
+App is working on PORT 5000
+App is working on PORT 5000
+App is working on PORT 5000
+::1 - - [15/Oct/2021:17:28:32 +0000] "GET /planets HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+::1 - - [15/Oct/2021:17:28:32 +0000] "GET /favicon.ico HTTP/1.1" 200 2578 "http://localhost:5000/planets" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+::1 - - [15/Oct/2021:17:28:41 +0000] "GET /planets HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+::1 - - [15/Oct/2021:17:28:41 +0000] "GET /favicon.ico HTTP/1.1" 200 2578 "http://localhost:5000/planets" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+::1 - - [15/Oct/2021:17:28:44 +0000] "GET /planets HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+::1 - - [15/Oct/2021:17:28:44 +0000] "GET /favicon.ico HTTP/1.1" 200 2578 "http://localhost:5000/planets" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
