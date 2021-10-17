@@ -1,25 +1,16 @@
 const http = require('http')
 const app = require('./app.js')
-const mongoose = require('mongoose')
+const { loadLaunches } = require('./models/launches.model.js')
 const { loadPlanet } = require('./models/planets.model.js')
-
+const { mongoConnect } = require('./services/mongo.js')
+require('dotenv').config()
 const server = http.createServer(app)
-const PORT = 5000
-const MONGO_URL =
-  'mongodb+srv://root:toor@tltm.ozxq4.mongodb.net/tltm?retryWrites=true&w=majority'
-
-mongoose.connection.once('open', () => {
-  console.log('Mongoose connection ready')
-})
-mongoose.connection.on('error', (err) => {
-  console.error(err)
-})
+const PORT = process.env.PORT || 8000
 
 async function startServer() {
-  await mongoose.connect(MONGO_URL)
+  await mongoConnect()
   await loadPlanet()
-  server.listen(PORT, () => console.log('App is working on PORT 5000'))
+  await loadLaunches()
+  server.listen(PORT, () => console.log(`App is working on PORT ${PORT} `))
 }
-// Routers
-
 startServer()
